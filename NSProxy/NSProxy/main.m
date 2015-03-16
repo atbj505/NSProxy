@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UserHttpHandler.h"
-#import "CommentHttpHandler.h"
+#import "UserHttpHandlerImp.h"
+#import "CommentHttpHandlerImp.h"
 #import "HttpProxy.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        
         //初始化，注册Protocol对应的实现类对象
         [[HttpProxy sharedInstance] registerHttpProtocol:@protocol(UserHttpHandler) handler:[UserHttpHandlerImp new]];
         [[HttpProxy sharedInstance] registerHttpProtocol:@protocol(CommentHttpHandler) handler:[CommentHttpHandlerImp new]];

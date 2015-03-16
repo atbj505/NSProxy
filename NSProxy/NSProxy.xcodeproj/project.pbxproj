@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		57CE906A1AB66E840036F4BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CE90691AB66E840036F4BE /* main.m */; };
 		57CE907E1AB67A0A0036F4BE /* HttpProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CE907D1AB67A0A0036F4BE /* HttpProxy.m */; };
+		57CE90811AB67CE20036F4BE /* CommentHttpHandlerImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CE90801AB67CE20036F4BE /* CommentHttpHandlerImp.m */; };
+		57CE90841AB67D430036F4BE /* UserHttpHandlerImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CE90831AB67D430036F4BE /* UserHttpHandlerImp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,10 @@
 		57CE90791AB679A30036F4BE /* CommentHttpHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentHttpHandler.h; sourceTree = "<group>"; };
 		57CE907C1AB67A0A0036F4BE /* HttpProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpProxy.h; sourceTree = "<group>"; };
 		57CE907D1AB67A0A0036F4BE /* HttpProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpProxy.m; sourceTree = "<group>"; };
+		57CE907F1AB67CE20036F4BE /* CommentHttpHandlerImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentHttpHandlerImp.h; sourceTree = "<group>"; };
+		57CE90801AB67CE20036F4BE /* CommentHttpHandlerImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentHttpHandlerImp.m; sourceTree = "<group>"; };
+		57CE90821AB67D430036F4BE /* UserHttpHandlerImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHttpHandlerImp.h; sourceTree = "<group>"; };
+		57CE90831AB67D430036F4BE /* UserHttpHandlerImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHttpHandlerImp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +70,11 @@
 			children = (
 				57CE90691AB66E840036F4BE /* main.m */,
 				57CE90761AB679910036F4BE /* UserHttpHandler.h */,
+				57CE90821AB67D430036F4BE /* UserHttpHandlerImp.h */,
+				57CE90831AB67D430036F4BE /* UserHttpHandlerImp.m */,
 				57CE90791AB679A30036F4BE /* CommentHttpHandler.h */,
+				57CE907F1AB67CE20036F4BE /* CommentHttpHandlerImp.h */,
+				57CE90801AB67CE20036F4BE /* CommentHttpHandlerImp.m */,
 				57CE907C1AB67A0A0036F4BE /* HttpProxy.h */,
 				57CE907D1AB67A0A0036F4BE /* HttpProxy.m */,
 			);
@@ -129,6 +139,8 @@
 			files = (
 				57CE907E1AB67A0A0036F4BE /* HttpProxy.m in Sources */,
 				57CE906A1AB66E840036F4BE /* main.m in Sources */,
+				57CE90841AB67D430036F4BE /* UserHttpHandlerImp.m in Sources */,
+				57CE90811AB67CE20036F4BE /* CommentHttpHandlerImp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

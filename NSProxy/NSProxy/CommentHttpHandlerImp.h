@@ -1,5 +1,5 @@
 //
-//  UserHttpHandler.h
+//  CommentHttpHandlerImp.h
 //  NSProxy
 //
 //  Created by Robert on 15/3/16.
@@ -7,10 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CommentHttpHandler.h"
 
-@protocol UserHttpHandler <NSObject>
-
-//用户相关接口
-- (void)getUserWithID:(NSNumber *)userID;
+@interface CommentHttpHandlerImp : NSObject <CommentHttpHandler>
 
 @end

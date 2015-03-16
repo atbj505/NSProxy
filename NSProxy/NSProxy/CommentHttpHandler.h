@@ -14,7 +14,3 @@
 - (void)getCommentsWithDate:(NSDate *)date;
 
 @end
-
-@interface CommentHttpHandler : NSObject
-
-@end

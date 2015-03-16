@@ -18,14 +18,15 @@
 
 @implementation HttpProxy
 
-static HttpProxy *proxy;
+static HttpProxy *proxy = nil;
 
 + (instancetype)sharedInstance {
     
     static dispatch_once_t onceToken;
     
     dispatch_once(&onceToken, ^{
-        proxy = [[self alloc] init];
+        proxy = [HttpProxy alloc];
+        proxy.selToHandlerMap = [NSMutableDictionary new];
     });
     return proxy;
 }
