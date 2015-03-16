@@ -25,6 +25,7 @@ static HttpProxy *proxy = nil;
     static dispatch_once_t onceToken;
     
     dispatch_once(&onceToken, ^{
+#warning NSProxy 不能init
         proxy = [HttpProxy alloc];
         proxy.selToHandlerMap = [NSMutableDictionary new];
     });
